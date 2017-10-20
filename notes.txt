@@ -1,0 +1,18 @@
+
+ 1 simple starter page
+
+ 2 the two external style sheets are for the main page and the menu system respectively
+
+ 3 the # inside the menu (nav section) is a dead link. A dead link behaves like a link for test purposes.
+   To turn # into a linke replace with:
+
+    index.html, page3.html etc
+
+
+Geoff 2017
+
+
+
+
+ 
+ 

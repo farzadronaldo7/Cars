@@ -1,0 +1,108 @@
+    body		      /* anything in the 'body' effects all the boxes */
+	{
+	
+	background-image: url(images/cardrift.gif);
+	background-size: 100% 100%;
+	
+	background-repeat: no-repeat;
+	font-family: verdana;
+	font-size: 12px;
+        margin: 0px;
+	
+	
+	}
+
+	.container	      /* container's a box to hold all the other boxes */
+	{
+	width:950px;
+	height:800px;
+	padding: 5px;
+        margin: 0px auto;
+			
+	}
+
+	
+	.header               
+        {
+	height: 100px;
+	width: 950px;          
+	background-color: red;
+	}
+
+	.nav               
+        {
+	height: 28px;
+	width: 950px;          
+	background-color: black;
+       
+	}
+
+
+	.middle
+	{
+	height: 600px;
+	width: 950px;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+	color:black;
+    background: rgba(255,255,255,0.5);
+       	float: left;
+	}
+
+.video1{
+	height: 50%;
+	width: 49.5%;
+	background-color: red;
+	float: left;
+	margin-bottom: 5px;
+} 
+
+
+.video2{
+	height: 50%;
+	width: 49.5%;
+	background-color: blue;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.image1{
+	height: 49%;
+	width: 33%;
+	background-color: red;
+	float: left;
+} 
+
+
+.image2{
+	height: 49%;
+	width:  33%;
+	background-color: blue;
+	float: right;
+	margin-left: 5px;
+}
+
+.image3{
+	height: 49%;
+	width:  33%;
+	background-color: green;
+	float: right;
+}
+
+/*============
+BRAND
+===========*/
+.brand1 {
+	height: 100%;
+	width:  24.5%;
+	float: left;
+}
+
+.brandbutton { 
+	height: 100%;
+	width:  75%;
+	float: right;
+}
+
+

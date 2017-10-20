@@ -1,0 +1,62 @@
+
+
+  ul 
+
+  {
+    list-style: none;padding: 0px;margin: 0px;
+  }
+
+  ul li 
+
+   {
+     display: block;position: relative;float: left; border:1px solid #000;       /* change to left if you prefer */
+   }
+
+  li ul
+  {
+    display: none;
+  }
+
+ 
+   ul li a 
+  {
+   display: block;background: black;          /* blue background colour */
+   padding: 5px 10px 5px 10px;               
+   text-decoration: none;
+   white-space: nowrap;color: #fff;
+
+  }
+
+  ul li a:hover
+   {
+     background: red;     /* highlight colour */
+   }
+
+
+  li:hover ul
+  {
+
+   display: block; position: absolute;
+  }
+
+  li:hover li 
+
+ {
+
+  float: none;
+
+ }
+
+  li:hover a 
+ {
+   background: gray;         /* dropdown colour */
+ }
+ 
+ li:hover li a:hover 
+
+  #drop-nav li ul li {border-top: 0px;
+
+ }
+
+
+</style>

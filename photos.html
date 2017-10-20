@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="mystyle2.css">
+
+    <link rel="stylesheet" href="menu.css">
+	
+<script src="jquery-1.9.1.min.js">  </script>
+
+<script>
+	$(document).ready(function()
+ {
+		var currentPosition = 0;
+		var slideWidth = 950;     
+		var slides = $('.slide');
+		var numberOfSlides = slides.length;
+		var slideShowInterval;
+		var speed  = 2000;                                        // 2 seconds, change it if you want
+
+		slideShowInterval = setInterval(changePosition, speed);
+		slides.wrapAll('<div id="slidesHolder"></div>')
+		slides.css({ 'float' : 'left' });
+		$('#slidesHolder').css('width', slideWidth * numberOfSlides);
+		
+		
+		function changePosition() 
+{
+			if(currentPosition == numberOfSlides - 1)
+ {
+				currentPosition = 0;
+			} else {
+				currentPosition++;
+			}
+			moveSlide();
+		}
+		function moveSlide()
+ {
+		$('#slidesHolder')
+		  .animate({'marginLeft' : slideWidth*(-currentPosition)});
+		}
+
+	});
+
+</script>
+
+
+</head>
+
+
+<div class = "container"> 
+	
+
+	<div class = "header" > 
+          <img src="images/final logo.jpg" onmouseover = "this.src= 'images/final logo2.jpg' " onmouseout =  "this.src= 'images/final logo.jpg' " width = 100% height = 100%>
+	</div>
+
+
+
+	<div class = "nav" >
+	    
+<ul id="drop-nav" style="position: absolute; z-index:1000;">
+
+
+  <li><a href="index.html"> Home </a></li>
+  <li><a href="#"> Photos </a></li>
+
+
+  <li><a href="Brand.html"> Brand</a></li>
+  
+  <li><a href="most expensive.html"> Most expensive </a></li>
+
+  <li><a href="#"> Contact </a>
+    <ul>
+      <li><a href="find us.html"> Find us </a></li>
+      <li><a href="about.html"> About </a></li>
+    </ul>
+  </li>
+
+</ul>     
+	</div>
+
+
+
+
+
+	<div class = "left">
+                   
+	</div>
+
+	
+
+<div class = "middle">
+
+		<div id="slideshow">
+        <div id="slideshowWindow">
+    
+				<div class =  "slide">
+                    <img src = "images/mc p1.jpg">
+                </div>
+				
+       
+				<div class = "slide">
+                   <img src = "images/pagani.jpg">
+				</div>
+        
+				<div class = "slide">
+                   <img src = "images/gtr sport.jpg">
+				</div>
+
+				<div class = "slide">
+                   <img src = "images/lambo sport.jpg">
+				</div>
+		
+				<div class = "slide">
+                   <img src = "images/ferrari.jpg">
+				</div>
+
+				<div class = "slide">
+                   <img src = "images/bugatti.jpg">
+				</div>
+				
+				<div class = "slide">
+                   <img src = "images/audi r8.jpg">
+				</div>
+
+       </div>
+ </div>
+
+        
+</div>
+
+
+
+
+<div class = "right">
+
+  
+
+</div>
+
+
+
+
+</div>
+
+</html>
+</body>	
